@@ -1,1 +1,5 @@
+import pandas as pd 
+df = pd.read_csv(shashwat-prasad/frappe-/frappe.csv)
+print(df)
+
 
