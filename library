@@ -1,5 +1,19 @@
 import pandas as pd 
 df = pd.read_csv(shashwat-prasad/frappe-/frappe.csv)
-print(df)
+display(df)
+choice = int(input('which book do you want?\n'))
+book = df['title'][choice]
+print(f"Member has been issued with the book - {book}")
+days = int(input("For how many days do you want the book?\n"))
+bill = 0
+return_days = int(input('time of returning the book\n'))
+if return_days > days:
+    fine = return_days-days 
+for charge in range(0,fine-1):
+    bill += 10  
+    if bill >= 500:
+        break
+print(f"you have a total fine charged of - {bill} rupees\n")
+
 
 
